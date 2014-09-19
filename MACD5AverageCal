@@ -1,0 +1,18 @@
+package average;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MACD5AverageCal implements AverageCal {
+
+	@Override
+	public List<AverageData> cal(List<TradingStatisticsData> dataList) {
+		if (null == dataList || dataList.size() == 0) {
+			return new ArrayList<AverageData>();
+		}
+
+		int stepOfMACD5 = 5;
+
+		return AverageCalHelper.macdCal(dataList, stepOfMACD5);
+	}
+}
