@@ -1,0 +1,18 @@
+package average;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class OneMinTradingStatisticsCal implements TradingStatisticsCal {
+
+	@Override
+	public List<TradingStatisticsData> cal(List<TradingData> dataList) {
+		if (null == dataList || dataList.size() == 0) {
+			return new ArrayList<TradingStatisticsData>();
+		}
+
+		long stepOf1Minute = 1000 * 60;
+
+		return TradingStatisticsCalHelper.calBasedOnMinutes(dataList, stepOf1Minute);
+	}
+}
