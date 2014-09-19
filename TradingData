@@ -1,0 +1,77 @@
+package average;
+
+import java.io.Serializable;
+import java.math.BigDecimal;
+import java.util.Date;
+
+public class TradingData implements Serializable {
+	private static final long serialVersionUID = -4894569555890403239L;
+
+	private BigDecimal price;
+
+	private long volume;
+
+	private BigDecimal amount;
+
+	private Date time;
+
+	/**
+	 * @return the price
+	 */
+	public BigDecimal getPrice() {
+		return price;
+	}
+
+	/**
+	 * @param price
+	 *            the price to set
+	 */
+	public void setPrice(BigDecimal price) {
+		this.price = price;
+	}
+
+	/**
+	 * @return the volume
+	 */
+	public long getVolume() {
+		return volume;
+	}
+
+	/**
+	 * @param volume
+	 *            the volume to set
+	 */
+	public void setVolume(long volume) {
+		this.volume = volume;
+	}
+
+	/**
+	 * @return the amount
+	 */
+	public BigDecimal getAmount() {
+		return amount;
+	}
+
+	/**
+	 * @param amount
+	 *            the amount to set
+	 */
+	public void setAmount(BigDecimal amount) {
+		this.amount = amount;
+	}
+
+	/**
+	 * @return the time
+	 */
+	public Date getTime() {
+		return time;
+	}
+
+	/**
+	 * @param time
+	 *            the time to set
+	 */
+	public void setTime(Date time) {
+		this.time = time;
+	}
+}
