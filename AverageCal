@@ -1,7 +1,0 @@
-package average;
-
-import java.util.List;
-
-public interface AverageCal {
-	public List<AverageData> cal(List<TradingStatisticsData> dataList);
-}
